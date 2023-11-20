@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    background: url(bg1.png) no-repeat center center fixed;
+    background-repeat: no-repeat;
+    -khtml-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-auto-rows: repeat(auto, auto);
+    grid-template-areas:
+      "hd nav-bar "
+      "skills photo  "
+      "job photo  "
+      "edu   me   ";
+    grid-column-gap: 5%;
+    grid-row-gap: 0;
+}
+.header-logo {
+    grid-area: hd;
+}
+.logo {
+    max-width: 100%; 
+    height: auto; 
+}
+.nav-bar {
+    grid-area: nav-bar;
+    background-color: #302341;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-item{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin-right: 5%;
+    margin-left: 5%;
+    transition: color 0.3s linear;
+}
+
+.nav-item:hover{
+    color: #7B68EE;
+}
+.title{
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 200%;
+    font-weight: 700;
+    text-align: justify; 
+    margin-top: 10%;
+    margin-right: 10%;
+    border-bottom: 2px solid #7B68EE; 
+    padding-bottom: 5%; 
+    
+}
+.job{
+    grid-area: job;
+    padding-left: 7%;
+}
+.job-list{
+    color: #808080;
+    font-size: 18px;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+}
+.photo{
+    grid-area: photo;
+    justify-content: center;
+    background-color: #302341;
+    padding: 5%;
+}
+.photo-img{
+    width: 100%;
+    height: 85%;
+    margin-top: 8%;
+}
+.education {
+    grid-area: edu;
+    padding-left: 7%;
+}
+
+.education-list {
+    color: #808080;
+    font-size: 18px;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif; 
+    margin-left: -5%;
+}
+
+
+.year {
+    color: #fff;
+    font-size: 18px;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+}
+.me{
+    grid-area: me;
+    background-color: #302341;
+    padding: 5%;
+}
+.skills{
+    grid-area: skills;
+    padding-left: 7%;
+}
